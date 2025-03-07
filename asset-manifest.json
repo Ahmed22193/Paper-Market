@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Paper-Market/static/css/main.41e146a2.css",
-    "main.js": "/Paper-Market/static/js/main.b3c6c5e9.js",
+    "main.js": "/Paper-Market/static/js/main.baa48ced.js",
     "static/js/453.9c4120e6.chunk.js": "/Paper-Market/static/js/453.9c4120e6.chunk.js",
     "index.html": "/Paper-Market/index.html",
     "main.41e146a2.css.map": "/Paper-Market/static/css/main.41e146a2.css.map",
-    "main.b3c6c5e9.js.map": "/Paper-Market/static/js/main.b3c6c5e9.js.map",
+    "main.baa48ced.js.map": "/Paper-Market/static/js/main.baa48ced.js.map",
     "453.9c4120e6.chunk.js.map": "/Paper-Market/static/js/453.9c4120e6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.41e146a2.css",
-    "static/js/main.b3c6c5e9.js"
+    "static/js/main.baa48ced.js"
   ]
 }
