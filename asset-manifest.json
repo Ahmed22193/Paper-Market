@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/your-repo-name/static/css/main.41e146a2.css",
-    "main.js": "/your-repo-name/static/js/main.758f71b6.js",
-    "static/js/453.9c4120e6.chunk.js": "/your-repo-name/static/js/453.9c4120e6.chunk.js",
-    "index.html": "/your-repo-name/index.html",
-    "main.41e146a2.css.map": "/your-repo-name/static/css/main.41e146a2.css.map",
-    "main.758f71b6.js.map": "/your-repo-name/static/js/main.758f71b6.js.map",
-    "453.9c4120e6.chunk.js.map": "/your-repo-name/static/js/453.9c4120e6.chunk.js.map"
+    "main.css": "/Paper-Market/static/css/main.41e146a2.css",
+    "main.js": "/Paper-Market/static/js/main.1850ee92.js",
+    "static/js/453.9c4120e6.chunk.js": "/Paper-Market/static/js/453.9c4120e6.chunk.js",
+    "index.html": "/Paper-Market/index.html",
+    "main.41e146a2.css.map": "/Paper-Market/static/css/main.41e146a2.css.map",
+    "main.1850ee92.js.map": "/Paper-Market/static/js/main.1850ee92.js.map",
+    "453.9c4120e6.chunk.js.map": "/Paper-Market/static/js/453.9c4120e6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.41e146a2.css",
-    "static/js/main.758f71b6.js"
+    "static/js/main.1850ee92.js"
   ]
 }
