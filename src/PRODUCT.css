@@ -1,0 +1,87 @@
+.contentOfProduct {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    object-position: center;
+}
+.PRODUCT{
+    color: white;
+    box-shadow: 0 0 5px rgb(113, 112, 112);
+    margin: 10px;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgb(21, 21, 21);
+    border-radius: 10px;
+}
+.myimage{
+    width: 100%;
+    height: 60%;
+    margin: 0px auto;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-position: center; /* //////////////////////////////////////////////////////////////////////////// */
+}
+
+.PRODUCT button{
+    background-color: aquamarine;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+.PRODUCT button:hover{
+    background-color: rgb(53, 255, 188);
+    box-shadow: 0 0 5px rgb(53, 255, 188);
+}
+.PRODUCT h2 , .PRODUCT h3 {
+    margin: 10px auto;
+}
+
+.CARTCONTAINER{
+    width: 100%;
+
+}
+.EmptyCart{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    
+    margin-top: 10%;
+}
+
+.GetTotalPrice{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.723);
+    padding: 5px 0;
+    color: white;
+}
+.GetTotalPrice .cart_summary{
+    padding: 5px;
+}
+.GetTotalPrice .cart_summary h3{
+    margin: 15px auto;
+    color: aquamarine;
+}
+.GetTotalPrice .cart_summary button{
+    background-color: aquamarine;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.2s;
+    margin-bottom: 20px;
+}
+.GetTotalPrice .cart_summary button:hover{
+    background-color: rgb(53, 255, 188);
+    box-shadow: 0 0 5px rgb(53, 255, 188);
+}

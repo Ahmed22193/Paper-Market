@@ -1,38 +1,130 @@
-.App {
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.NavBar_list{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  direction: rtl;
+  background-color: rgb(21, 21, 21);
+  padding: 20px;
+  color: white;
+  z-index: 3;
+  box-shadow: 0 0 10px rgb(113, 112, 112);
+  top: 0;
+  position: sticky;
+}
+.NavBar_Logo{
+  cursor: pointer;
+  color: rgb(53, 255, 188);
+  text-shadow: 0 0 3px rgb(53, 255, 188);
+}
+.NavBar_list li{
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+.NavBar_list li:hover{
+  color: rgb(41, 41, 226);
+  transform: scale(1,1);
+}
+
+
+.mainpageintro{
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  align-content: center;
+}
+.mainpageintro h1{
+  direction: ltr;
+  padding: 10px auto;
+  margin: 10px auto;
+  font-size: 35px;
+  color: white;
+}
+.mainpageintro p{
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgb(170, 170, 170);
+}
+
+.NavBar_list li.active {
+  border-bottom: rgb(53, 255, 188) 3px solid;
+  padding-bottom: 5px;
+}
+
+.NavBar_list span{
+  color: red;
+  font-size: 20px;
+  border-radius: 30%;
+  padding: 0px 2px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.DetailsContainer{
+  width: 100%;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.DetailsContainer .D1{
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  line-height: 1.8;
+}
+.DetailsContainer .D2{
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  line-height: 1.8;
+}
+.DetailsContainer .D2 p{
+  background-color: #31303127;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.DetailsContainer .D2 .W{
+  color: rgb(53, 255, 188);
+  text-shadow: 0 0 5px rgb(53, 255, 188);
+}
+.DetailsContainer .D2 .F{
+  color: rgb(23, 79, 221);
+  text-shadow: 0 0 5px rgb(53, 100, 255);
+}
+.DetailsContainer .D2 p button{
+  padding: 5px;
+  font-size: 18px;
+  margin: 10px;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(94, 94, 94, 0.133);
+  cursor: pointer;
+  margin-left: 60px;
+  transition: 0.2s;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.DetailsContainer .D2 p button:hover{
+  background-color: rgb(53, 255, 188);
+  box-shadow: 0 0 5px rgb(53, 255, 188);
+  color: black;
 }
+.DetailsContainer .D2 .F button:hover{
+  background-color: rgb(23, 79, 221);
+  box-shadow: 0 0 5px rgb(53, 100, 255);
+}
+
