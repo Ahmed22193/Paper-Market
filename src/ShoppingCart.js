@@ -57,7 +57,7 @@ const ShoppingCart = () => {
                         </div>
                     ))
                 ) : (
-                    <p className='EmptyCart'>العربة فارغة 🛒</p>
+                    <p style={{color:'white'}} className='EmptyCart'>! العربة فارغة 🛒</p>
                 )}
             </div>
             <div className='GetTotalPrice'>
