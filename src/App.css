@@ -5,13 +5,27 @@
   margin: 0;
   padding: 0;
 }
-.NavBar_list{
+.App{
+  width: 100%;
+  min-height: 100vh;
+}
+.NavBar{
+  width: 100%;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  box-shadow: 0 0 10px rgb(113, 112, 112);
+  background-color: rgb(65, 65, 65);
+}
+
+.NavBar_list,
+.NavBar_list2{
   list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
   direction: rtl;
-  background-color: rgb(21, 21, 21);
   padding: 20px;
   color: white;
   z-index: 3;
@@ -24,18 +38,57 @@
   color: rgb(53, 255, 188);
   text-shadow: 0 0 3px rgb(53, 255, 188);
 }
-.NavBar_list li{
+.NavBar_list li,
+.NavBar_list2 li{
   cursor: pointer;
   font-size: 17px;
   font-weight: 500;
   transition: 0.2s;
 }
-.NavBar_list li:hover{
-  color: rgb(41, 41, 226);
+.NavBar_list li:hover,
+.NavBar_list2 li:hover{
+  color: rgb(3, 203, 147);
   transform: scale(1,1);
 }
+.NavBar_list2{
+  display: none;
+}
+@media (max-width: 768px) {
+  /* تنسيقات الهواتف المحمولة */
+  body {
+    font-size: 14px;
+  }
+  .NavBar_list{
+    display: none;
+  }
+  .NavBar_list2 li{
+    margin: 10px auto;
+  }
+  .NavBar_list2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 8vh;
+    overflow-y: hidden;
+    transition: height 0.4s ease-in-out;
+  }
+  .NavBar_list2:hover {
+    height: 38vh;
+  }
+  .NavBar_list2:hover p {
+    transform: rotate(-90deg);
+    text-shadow: 0 0 5px rgb(135, 226, 217);
+  }
+  .NavBar_list2 p{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 20px;
+    color: turquoise;
+    transition: transform 0.4s ease-in-out;
+  }
 
-
+}
 .mainpageintro{
   text-align: center;
   position: absolute;
@@ -49,20 +102,38 @@
   padding: 10px auto;
   margin: 10px auto;
   font-size: 35px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .mainpageintro p{
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.7;
-  color: rgb(170, 170, 170);
+  color: rgba(27, 25, 25, 0.845);
 }
-
-.NavBar_list li.active {
+@media (max-width: 768px){
+  .mainpageintro{
+    width: 100%;
+  }
+  .mainpageintro h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .mainpageintro p{
+    font-size: 15px;
+    width: 90%;
+    margin: 10px auto;
+    color: rgba(30, 33, 32, 0.946);
+    font-weight: 400;
+  }
+}
+.NavBar_list li.active ,
+.NavBar_list2 li.active{
   border-bottom: rgb(53, 255, 188) 3px solid;
   padding-bottom: 5px;
 }
 
-.NavBar_list span{
+.NavBar_list span,
+.NavBar_list2 span
+{
   color: red;
   font-size: 20px;
   border-radius: 30%;
@@ -72,8 +143,6 @@
 
 .DetailsContainer{
   width: 100%;
-  background-color: black;
-  color: white;
 }
 
 .DetailsContainer .D1{
@@ -81,6 +150,8 @@
   margin: 50px auto;
   text-align: center;
   line-height: 1.8;
+  font-size: 18px;
+  color: rgb(61, 61, 57);
 }
 .DetailsContainer .D2{
   width: 80%;
@@ -89,7 +160,8 @@
   line-height: 1.8;
 }
 .DetailsContainer .D2 p{
-  background-color: #31303127;
+  box-shadow: 0 0 10px rgb(53, 255, 188);
+  background-color: rgba(8, 16, 15, 0.806);
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
@@ -97,12 +169,20 @@
   font-weight: 600;
 }
 .DetailsContainer .D2 .W{
-  color: rgb(53, 255, 188);
-  text-shadow: 0 0 5px rgb(53, 255, 188);
+  color: #25D366; 
+    text-shadow: 1px 1px 3px #128C7E, -1px -1px 3px #075E54;
 }
 .DetailsContainer .D2 .F{
-  color: rgb(23, 79, 221);
-  text-shadow: 0 0 5px rgb(53, 100, 255);
+  color: #1877F2; 
+  text-shadow: 1px 1px 3px #3b5998, -1px -1px 3px #1c4b8c;
+}
+.DetailsContainer .D2 .E{
+  color: #d62976; 
+  text-shadow: 1px 1px 3px #fa7e1e, -1px -1px 3px #962fbf;
+}
+.DetailsContainer .D2 .T{
+  color: white; 
+  text-shadow: 2px 2px 4px #25F4EE, -2px -2px 4px #FE2C55, 0 0 5px black;
 }
 .DetailsContainer .D2 p button{
   padding: 5px;
@@ -111,7 +191,7 @@
   width: 150px;
   border-radius: 10px;
   border: none;
-  background-color: rgba(94, 94, 94, 0.133);
+  background-color: rgba(0, 205, 185, 0.257);
   cursor: pointer;
   margin-left: 60px;
   transition: 0.2s;
@@ -119,12 +199,92 @@
 }
 
 .DetailsContainer .D2 p button:hover{
-  background-color: rgb(53, 255, 188);
-  box-shadow: 0 0 5px rgb(53, 255, 188);
-  color: black;
+  background-color: rgb(160, 242, 215);
+  box-shadow: 0 0 5px rgb(46, 109, 88);
+  color: rgb(0, 0, 0);
 }
-.DetailsContainer .D2 .F button:hover{
-  background-color: rgb(23, 79, 221);
-  box-shadow: 0 0 5px rgb(53, 100, 255);
+.sendDetails{
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+  background-color: rgba(8, 16, 15, 0.806);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(53, 255, 188);
+}
+.sendDetails form{
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+.sendDetails form input,
+.sendDetails form textarea{
+  width: 60%;
+  padding: 10px;
+  font-size: 18px;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.sendDetails form .btn{
+  background-color: rgb(0, 228, 209);
+  cursor: pointer;
+  transition: 0.2s;
+  color: black;
+  width: 20%;
+  margin: 10px auto;
+  padding: 8px;
+  transition: 0.2s;
+}
+.sendDetails form .btn:hover{
+  background-color: rgb(53, 255, 188);
+  box-shadow: 0 0 5px rgb(0, 133, 228);
+  color: white;
 }
 
+@media (max-width: 768px){
+  .DetailsContainer .D1{
+    width: 90%;
+    font-size: 15px;
+    text-align: center;
+  }
+  .DetailsContainer .D2{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+  }
+  .DetailsContainer .D2 p{
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+  }
+  .DetailsContainer .D2 p button{
+    padding: 5px;
+    font-size: 15px;
+    margin: 5px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 30px;
+  }
+
+
+
+
+  .sendDetails{
+    width: 95%;
+  }
+  .sendDetails form input,
+  .sendDetails form textarea{
+    width: 100%;
+  }
+  .sendDetails form .btn{
+    width: 40%;
+    color: white;
+  }
+}

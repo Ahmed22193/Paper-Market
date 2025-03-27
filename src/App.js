@@ -5,6 +5,7 @@ import MainPage from './MainPage';
 import ShoppingCart from './ShoppingCart';
 import Details from './Details';
 import Products from './Products';
+import Team from './Team';
 function App() {
     const [Currentpage, setCurrentpage] = useState('home');
     const [cartCount, setCartCount] = useState(0);
@@ -25,6 +26,7 @@ function App() {
             case 'ShoppingCart': return <ShoppingCart />;
             case 'details': return <Details />;
             case 'products': return <Products />;
+            case 'team': return <Team />;
             default: return <MainPage />;
         }
     };

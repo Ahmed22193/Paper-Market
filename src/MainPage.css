@@ -1,6 +1,7 @@
 .MainPage{
-    background-color: rgb(3, 17, 17);
-    min-height: 94.4vh;
+    width: 100%;
+    background-color: rgb(134, 191, 191);
+    min-height: 100vh;
     position: relative;
     display: grid;
     object-position: center;
