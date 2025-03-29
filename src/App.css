@@ -76,7 +76,7 @@
     margin-bottom: 10px;
   }
   .NavBar_list2:hover {
-    height: 38vh;
+    height: 40vh;
   }
   .NavBar_list2:hover p {
     transform: rotate(-90deg);
