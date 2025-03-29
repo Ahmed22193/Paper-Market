@@ -72,6 +72,9 @@
     overflow-y: hidden;
     transition: height 0.4s ease-in-out;
   }
+  .NavBar_list2 h1{
+    margin-bottom: 10px;
+  }
   .NavBar_list2:hover {
     height: 38vh;
   }

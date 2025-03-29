@@ -21,8 +21,11 @@ export default function Products() {
         { id: 13,type:'handBag', name: 'اكياس يد للتسوق', price: '99 LE', image: `${process.env.PUBLIC_URL}/imgs/marketpaper.jpg` },
         { id: 14,type:'cups', name: 'اكواب ورق 12 اونز', price: '125 LE', image: `${process.env.PUBLIC_URL}/imgs/cups.jpg` },
         { id: 15,type:'cups', name: 'اكواب ورق 12 اونز', price: '125 LE', image: `${process.env.PUBLIC_URL}/imgs/cups.jpg` },
+        { id: 16,type:'roll', name: 'ورق طباعة الفواتير', price: '100 LE', image: `${process.env.PUBLIC_URL}/imgs/paper_print.jpg` },
+        { id: 17,type:'roll', name: 'ورق كتابة لزق', price: '50 LE', image: `${process.env.PUBLIC_URL}/imgs/paper_write.jpg` },
+        { id: 18,type:'roll', name: 'روول ورق طباعة', price: '500 LE', image: `${process.env.PUBLIC_URL}/imgs/paper_roll.jpg` },
         
-    ];    
+    ];  
 
     const addToCart = (product) => {
         let cart = localStorage.getItem('myCart')
