@@ -42,7 +42,7 @@ const ShoppingCart = () => {
                     cart.map((item, index) => (
                         <div key={index} className='PRODUCT'>
                             <div className='myimage' style={{ backgroundImage: `url(${item.image})` }}></div>
-                            <h2>Name : {item.name}</h2>
+                            <h2>{item.name}</h2>
                             <h3>Price : {item.price}</h3>
                             <button onClick={() => {
                                 const confirmDelete = window.confirm(`هل تريد حذف ${item.name} من العربة؟`);
