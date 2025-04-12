@@ -35,7 +35,7 @@ export default function Team() {
                     </div>
                     <div className='card'>
                         <img src={`${process.env.PUBLIC_URL}/imgs/man.png`} alt='ahmed' />
-                        <h3>احمد محمد ابراهيم محمد</h3>
+                        <h3>احمد محمد ابراهيم محمد مسودة</h3>
                     </div>
                     <div className='card'>
                         <img src={`${process.env.PUBLIC_URL}/imgs/man.png`} alt='ahmed' />
